@@ -1,12 +1,257 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mano AI</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mano AI — AI Researcher & Engineer</title>
+  <meta name="description" content="Portfolio of Manoj V — AI researcher, engineer and creator. Projects in computer vision, NLP, and ML." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#5eead4;--muted:#9aa4b2;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071025 0%,var(--bg) 100%)}
+    .container{max-width:1100px;margin:30px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;color:#06202a;font-weight:800;font-size:22px;box-shadow:0 8px 24px rgba(6,32,42,0.35)}
+    h1{margin:0;font-size:30px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    .hero{margin-top:28px;display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+    .card{background:var(--card);padding:22px;border-radius:16px;box-shadow:0 6px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .bio h2{margin:0 0 8px}
+    .buttons{margin-top:16px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#012;box-shadow:0 10px 30px rgba(92,231,200,0.08)}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .side-stats{display:flex;flex-direction:column;gap:12px}
+    .stat{display:flex;justify-content:space-between;align-items:center}
+    .projects{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+    .project h3{margin:0 0 6px}
+    .resume-section{margin-top:26px;display:grid;grid-template-columns:1fr 360px;gap:20px}
+    .timeline{border-left:2px solid rgba(255,255,255,0.03);padding-left:16px}
+    .timeline-item{margin-bottom:18px}
+    .meta{color:var(--muted);font-size:13px}
+    .tag{display:inline-block;background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;margin-right:8px;font-weight:600;color:var(--muted)}
+    footer{margin-top:36px;padding:18px;color:var(--muted);font-size:14px;text-align:center}
+    .links{display:flex;gap:12px;justify-content:center;margin-top:12px}
+    .chip{background:transparent;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.03);color:var(--muted);font-weight:600}
+    table{width:100%;border-collapse:collapse}
+    td,th{padding:8px 6px}
+    @media (max-width:980px){.hero,.resume-section{grid-template-columns:1fr}.side-stats{flex-direction:row;justify-content:space-between}}
+  </style>
 </head>
 <body>
-    <h1>Welcome to Mano AI 🚀</h1>
-    <p>Your future AI research and technology brand.</p>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">M</div>
+        <div>
+          <h1>Mano AI</h1>
+          <p class="lead">B.Tech AI & Data Science — AI Researcher & Engineer</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card bio">
+        <h2>Hello — I’m Manoj</h2>
+        <p style="color:var(--muted);">Enthusiastic and solutions-driven AI & Data Science undergraduate with expertise in Python, computer vision, and MERN stack development. Experienced in building production-ready AI applications, including a real-time face recognition attendance system integrating OpenCV, Flask, and React.js. Microsoft Certified in Azure AI Fundamentals (AI-900).</p>
+
+        <div class="skills" aria-label="skills">
+          <span class="skill">Python</span>
+          <span class="skill">PyTorch</span>
+          <span class="skill">TensorFlow</span>
+          <span class="skill">OpenCV</span>
+          <span class="skill">NLP</span>
+          <span class="skill">React.js</span>
+          <span class="skill">Flask</span>
+          <span class="skill">MongoDB</span>
+          <span class="skill">MLOps</span>
+        </div>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="/ManojV_Resume1.pdf" target="_blank">Download Resume</a>
+        </div>
+      </div>
+
+      <aside class="card side-stats">
+        <div style="text-align:center">
+          <h3 style="margin:0">Contact</h3>
+          <p style="color:var(--muted);margin:6px 0 0">mano3009v@gmail.com</p>
+          <p style="color:var(--muted);margin:6px 0 0">+91-9487285148</p>
+        </div>
+
+        <div class="stat">
+          <div style="color:var(--muted)">Public Projects</div>
+          <div style="font-weight:700">12</div>
+        </div>
+
+        <div class="stat">
+          <div style="color:var(--muted)">Followers</div>
+          <div style="font-weight:700">0</div>
+        </div>
+
+        <div style="text-align:center;margin-top:8px">
+          <a class="chip" href="#contact">Hire / Collaborate</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" class="card" style="margin-top:20px">
+      <h2 style="margin-bottom:12px">Selected Projects</h2>
+      <div class="projects">
+        <article class="card project">
+          <h3>Face Recognition Attendance</h3>
+          <p style="color:var(--muted);margin:8px 0">Real-time face recognition attendance system with Python, OpenCV, Flask, and React.js. Logs attendance with timestamps and delay status, featuring an admin dashboard with Excel export.</p>
+          <p style="margin:8px 0"><strong>Tech:</strong> Python · OpenCV · Flask · MongoDB · React.js</p>
+          <p class="meta">Role: Lead developer — designed recognition pipeline, backend APIs, and DB schema.</p>
+        </article>
+
+        <article class="card project">
+          <h3>Document Summarizer</h3>
+          <p style="color:var(--muted);margin:8px 0">Transformer-based summarization pipeline with extraction and abstractive layers for efficient document insights.</p>
+          <p style="margin:8px 0"><strong>Tech:</strong> HuggingFace · PyTorch · FastAPI</p>
+          <p class="meta">Role: Research & model fine-tuning, created evaluation metrics for ROUGE and BLEU.</p>
+        </article>
+
+        <article class="card project">
+          <h3>ML Pipeline (MLOps)</h3>
+          <p style="color:var(--muted);margin:8px 0">End-to-end machine learning pipeline with CI/CD, containerized deployment, and monitoring.</p>
+          <p style="margin:8px 0"><strong>Tech:</strong> Docker · GitHub Actions · Kubernetes</p>
+          <p class="meta">Role: Implemented model CI and automated deployment workflows.</p>
+        </article>
+
+        <article class="card project">
+          <h3>Inventory Tracker (MERN)</h3>
+          <p style="color:var(--muted);margin:8px 0">A MERN stack inventory management system built as part of B.Tech project using React.js and MongoDB.</p>
+          <p style="margin:8px 0"><strong>Tech:</strong> React.js · Node.js · Express · MongoDB</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="resume-section">
+      <div class="card">
+        <h2>Resume — Manoj V</h2>
+        <p class="meta">B.Tech Artificial Intelligence and Data Science | Muthayammal Engineering College</p>
+
+        <h3 style="margin-top:12px">Objective</h3>
+        <p style="color:var(--muted);">Enthusiastic and solutions-driven AI & Data Science undergraduate seeking an AI Engineer internship to leverage deep learning, computer vision, and fullstack development skills in creating impactful, scalable AI solutions for real-world problems.</p>
+
+        <h3 style="margin-top:12px">Education</h3>
+        <ul style="color:var(--muted);margin:6px 0 0;padding-left:18px">
+          <li><strong>B.Tech in Artificial Intelligence and Data Science</strong>, Muthayammal Engineering College (2023 - 2027). CGPA: 7.5/10</li>
+          <li><strong>Higher Secondary (XII)</strong>, Shri Swamy Matric Higher Secondary School — 73.6% (2023)</li>
+          <li><strong>Secondary (X)</strong>, Shri Swamy Matric Higher Secondary School — 80% (2021)</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Certifications</h3>
+        <ul style="color:var(--muted);margin:6px 0 0;padding-left:18px">
+          <li>Microsoft Certified: Azure AI Fundamentals (AI-900) — June 2025</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Technical Skills</h3>
+        <table style="color:var(--muted);margin-top:8px">
+          <tr><th align="left">Programming</th><td>Python, Java, JavaScript</td></tr>
+          <tr><th align="left">Web Development</th><td>HTML, CSS, React.js, Node.js, Express.js, MongoDB (MERN)</td></tr>
+          <tr><th align="left">AI / ML</th><td>NumPy, pandas, scikit-learn, PyTorch, TensorFlow, OpenCV, HuggingFace</td></tr>
+          <tr><th align="left">Tools</th><td>Git, VS Code, Jupyter Notebook, Docker</td></tr>
+        </table>
+
+        <h3 style="margin-top:12px">Experience & Projects (Detailed)</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4 style="margin:0">Face Recognition Attendance System</h4>
+            <div class="meta">Python · OpenCV · Flask · MongoDB · React.js</div>
+            <p style="color:var(--muted);margin-top:6px">Designed real-time image capture and preprocessing, built an LBPH-based recognition pipeline, and created RESTful Flask APIs for recognition and attendance logging. Implemented an admin dashboard with React for user management, face capture, training, and report export.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h4 style="margin:0">Document Summarizer</h4>
+            <div class="meta">HuggingFace · PyTorch · FastAPI</div>
+            <p style="color:var(--muted);margin-top:6px">Developed an extraction + abstractive summarization workflow using transformer models, fine-tuned on domain-specific documents, and deployed inference as a FastAPI microservice with caching for throughput improvements.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h4 style="margin:0">MEC Attendance System (MERN + OpenCV)</h4>
+            <div class="meta">React.js · Node.js · MongoDB · Python (OpenCV)</div>
+            <p style="color:var(--muted);margin-top:6px">Built a full-stack attendance platform with a front page performing real-time face detection every 3 seconds. Captured frames sent to a Python server for recognition, storing attendance records with timestamps and delay status. Admin dashboard supports Excel import, face capture, training, and manual editing.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h4 style="margin:0">Inventory Tracker — B.Tech Project</h4>
+            <div class="meta">MERN</div>
+            <p style="color:var(--muted);margin-top:6px">Developed an inventory management application with CRUD operations, user authentication, and reporting features. Implemented responsive UI and RESTful backend services.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:12px">Selected Achievements</h3>
+        <ul style="color:var(--muted);margin:6px 0 0;padding-left:18px">
+          <li>Solved 70+ DSA problems on LeetCode.</li>
+          <li>Built and deployed multiple production ML pipelines and services.</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Courses & Workshops</h3>
+        <ul style="color:var(--muted);margin:6px 0 0;padding-left:18px">
+          <li>Machine Learning basics and Deep Learning fundamentals (self-study)</li>
+          <li>Workshops: OpenCV hands-on sessions, Flask API development</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Public GitHub Repos</h3>
+        <ul style="color:var(--muted);margin:6px 0 0;padding-left:18px">
+          <li><a href="https://github.com/Mano309" target="_blank" style="color:var(--accent);font-weight:700">github.com/Mano309</a> — see projects and code samples</li>
+        </ul>
+
+        <h3 style="margin-top:12px">References</h3>
+        <p style="color:var(--muted);margin:6px 0 0">Available on request.</p>
+      </div>
+
+      <aside class="card">
+        <h3>Quick Profile</h3>
+        <p style="color:var(--muted);margin:6px 0 0">Name: <strong>Manoj V</strong><br>Location: Tamil Nadu, India<br>Education: B.Tech AI & Data Science (2023-2027)</p>
+
+        <h4 style="margin-top:12px">Contact</h4>
+        <p style="color:var(--muted);margin:6px 0 0">Email: <a href="mailto:mano3009v@gmail.com" style="color:var(--accent);font-weight:700">mano3009v@gmail.com</a><br>Phone: +91-9487285148</p>
+
+        <h4 style="margin-top:12px">Links</h4>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
+          <a class="chip" href="https://github.com/Mano309" target="_blank">GitHub</a>
+          <a class="chip" href="https://linkedin.com/in/manoj30092005" target="_blank">LinkedIn</a>
+          <a class="chip" href="/ManojV_Resume1.pdf" target="_blank">Download Resume (PDF)</a>
+        </div>
+
+        <h4 style="margin-top:12px">Languages</h4>
+        <p style="color:var(--muted);margin:6px 0 0">English (fluent), Tamil (native)</p>
+
+        <h4 style="margin-top:12px">Interests</h4>
+        <p style="color:var(--muted);margin:6px 0 0">Computer Vision, NLP, MLOps, Open Source</p>
+      </aside>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="card">
+        <h2>Contact</h2>
+        <p style="color:var(--muted)">Interested in collaborating or hiring? Connect via email, LinkedIn, or GitHub.</p>
+        <p>Email: <a href="mailto:mano3009v@gmail.com" style="color:var(--accent);font-weight:700">mano3009v@gmail.com</a></p>
+        <div class="links">
+          <a class="chip" href="https://github.com/Mano309" target="_blank">GitHub</a>
+          <a class="chip" href="https://linkedin.com/in/manoj30092005" target="_blank">LinkedIn</a>
+          <a class="chip" href="/ManojV_Resume1.pdf" target="_blank">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <strong>Mano AI</strong> — AI Researcher · Deploy on GitHub Pages
+    </footer>
+  </div>
 </body>
 </html>
